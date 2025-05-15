@@ -1,4 +1,12 @@
 /** WaveOrtho (c) 2025 | WaveOrtho Inquiry Form & Exam Scheduler [version: 7.5.8] */
+@import url("https://fonts.googleapis.com/css2?family=Bicyclette&display=swap");
+
+/* Apply Bicyclette ONLY inside the form */
+#WAVE-form,
+#WAVE-form * {
+  font-family: 'Bicyclette', sans-serif !important;
+}
+
 
 #WAVE-form {
     padding: 10px;

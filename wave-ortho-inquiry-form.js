@@ -5210,7 +5210,8 @@ var WaveInquiryForm = function () {
 
         var part4 = _getText('LABEL.VIEW_TERMS_OF_SERVICE');
 
-        return "<span>".concat(part1, " </span><a href=\"").concat(privacyPolicyUrl, "\" target=\"_blank\">").concat(part2, "</a><span> ").concat(part3, " </span><a href=\"").concat(termsOfServiceUrl, "\" target=\"_blank\">").concat(part4, "</a><span>.</span>");
+        return "<span>" + part1 + "</span><div style='margin-top: 0.5rem;'><a href=\"" + privacyPolicyUrl + "\" target=\"_blank\">" + part2 + "</a><span> " + part3 + " </span><a href=\"" + termsOfServiceUrl + "\" target=\"_blank\">" + part4 + "</a><span>.</span></div>";
+
       },
       show: function show() {
         var isSubmitted = CONFIG.IS_SUBMITTED;

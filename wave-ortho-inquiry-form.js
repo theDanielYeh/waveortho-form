@@ -56,8 +56,8 @@ window.$wave_CONSTANTS = function () {
         french: 'Demandez votre consultation'
       },
       FIELD_IS_REQUIRED: {
-        english: 'this field is required',
-        spanish: 'este campo es requerido',
+        english: 'This field is required',
+        spanish: 'ste campo es requerido',
         french: 'Ce champ est requis'
       },
       IN: {
@@ -2710,7 +2710,8 @@ window.$wave_FormService = function () {
       text = text();
     }
 
-    return "\n            <label class=\"".concat(defaultLabelClassName, "\">\n                <span>").concat(text, "</span>\n                <sup title=\"required\" class=\"").concat(defaultRequiredClassName, "\" style=\"display: ").concat(required ? 'inherit' : 'none', "\">&#42;</sup>\n            </label>\n        ");
+    return "\n            <label class=\"".concat(defaultLabelClassName, "\">\n                <span>").concat(text).concat(required ? ' *' : '', "</span>\n            </label>\n        ");
+    // return "\n            <label class=\"".concat(defaultLabelClassName, "\">\n                <span>").concat(text, "</span>\n                <sup title=\"required\" class=\"").concat(defaultRequiredClassName, "\" style=\"display: ").concat(required ? 'inherit' : 'none', "\">&#42;</sup>\n            </label>\n        ");
   }
 
   exports.generateLabel = generateLabel;

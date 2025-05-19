@@ -16,14 +16,6 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
-label .required {
-  position: static !important;
-  margin-left: 0.25em;
-  color: red;
-  font-weight: bold;
-}
-
-
 .wave-form-container {
     max-width: 750px;
     margin: 0 auto;

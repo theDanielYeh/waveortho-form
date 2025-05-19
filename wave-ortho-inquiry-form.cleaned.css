@@ -395,14 +395,14 @@ span.appointment-button.unavailable {
 
 
 /* Fix asterisk positioning */
-#WAVE-form label .required {
-  position: static !important;
-  display: inline-block;
+label .wave-form-required {
+  display: inline !important;
+  vertical-align: super;
   margin-left: 0.25em;
   color: red;
   font-weight: bold;
-  vertical-align: baseline;
 }
+
 
 
 @media (max-width: 662px) {

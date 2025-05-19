@@ -550,7 +550,8 @@ window.$wave_CONSTANTS = function () {
         french: 'J\'accepte de recevoir des messages texte de'
       },
       TEXT_MESSAGE_CONSENT_2: {
-        english: '. Message frequency varies, message and data rates may apply. Message types may include: marketing (eg. Promos), patient care and/or conversational messages. Reply STOP to opt-out; HELP for more information.',
+        english: '',
+        // english: '. Message frequency varies, message and data rates may apply. Message types may include: marketing (eg. Promos), patient care and/or conversational messages. Reply STOP to opt-out; HELP for more information.',
         spanish: '. La frecuencia de los mensajes varía, pueden aplicarse tarifas de mensajes y datos. Los tipos de mensajes pueden incluir: marketing (por ejemplo, promociones), atención al paciente y/o mensajes conversacionales. Responda STOP para darse de baja; AYUDA para más información.',
         french: '. La fréquence des messages varie, des tarifs de messages et de données peuvent s\'appliquer. Les types de messages peuvent inclure: le marketing (par exemple, les promotions), les soins aux patients et/ou les messages conversationnels. Répondez STOP pour vous désinscrire; AIDE pour plus d\'informations.'
       },

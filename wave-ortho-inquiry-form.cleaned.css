@@ -393,6 +393,18 @@ span.appointment-button.unavailable {
     margin-bottom: 10px;
 }
 
+
+/* Fix asterisk positioning */
+#WAVE-form label .required {
+  position: static !important;
+  display: inline-block;
+  margin-left: 0.25em;
+  color: red;
+  font-weight: bold;
+  vertical-align: baseline;
+}
+
+
 @media (max-width: 662px) {
     .wave-table td {
         padding: 5px 3px 5px 3px;

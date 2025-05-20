@@ -87,7 +87,6 @@ select.wave-form-control {
     font-size: 1.0em;
 }
 
-.wave-form-required,
 .wave-error-message {
     padding-left: 3px;
     color: #c5181e;

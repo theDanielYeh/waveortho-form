@@ -5199,11 +5199,11 @@ var WaveInquiryForm = function () {
         var part1;
 
         part1 = _getText('LABEL.TEXT_MESSAGE_CONSENT');
-        // if (!brandName) {
-        //   part1 = _getText('LABEL.TEXT_MESSAGE_CONSENT');
-        // } else {
-        //   part1 = "".concat(_getText('LABEL.TEXT_MESSAGE_CONSENT_1'), " ").concat(brandName).concat(_getText('LABEL.TEXT_MESSAGE_CONSENT_2'));
-        // }
+        if (!brandName) {
+          part1 = _getText('LABEL.TEXT_MESSAGE_CONSENT');
+        } else {
+          part1 = "".concat(_getText('LABEL.TEXT_MESSAGE_CONSENT_1'), " ").concat(brandName).concat(_getText('LABEL.TEXT_MESSAGE_CONSENT_2'));
+        }
 
         var part2 = _getText('LABEL.VIEW_PRIVACY_POLICY');
 

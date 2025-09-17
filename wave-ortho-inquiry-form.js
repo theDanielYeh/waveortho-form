@@ -540,7 +540,7 @@ window.$wave_CONSTANTS = function () {
         french: 'Question/Message'
       },
       TEXT_MESSAGE_CONSENT: {
-        english: '*By submitting this form you consent to receiving text messages from this office.',
+        english: '*I consent to receive text messages at this phone number. Message frequency varies, message and data rates may apply. Messsage types include: marketing (e.g., promos), patient care and/or conversational messages. Reply STOP to opt-out; HELP for more information.',
         spanish: 'Doy mi consentimiento para recibir mensajes de texto en este número de teléfono. La frecuencia de los mensajes varía, pueden aplicarse tarifas de mensajes y datos. Los tipos de mensajes pueden incluir: marketing (por ejemplo, promociones), atención al paciente y/o mensajes conversacionales. Responda STOP para darse de baja; AYUDA para más información.La frecuencia de los mensajes varía, pueden aplicarse tarifas de mensajes y datos. Los tipos de mensajes pueden incluir: marketing (por ejemplo, promociones), atención al paciente y/o mensajes conversacionales. Responda STOP para darse de baja; AYUDA para más información.',
         french: 'J\'accepte de recevoir des SMS à ce numéro de téléphone. La fréquence des messages varie, des tarifs de messages et de données peuvent s\'appliquer. Les types de messages peuvent inclure: le marketing (par exemple, les promotions), les soins aux patients et/ou les messages conversationnels. Répondez STOP pour vous désinscrire; AIDE pour plus d\'informations.'
       },

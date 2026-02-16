@@ -621,41 +621,41 @@
     } */
 }
 @charset "UTF-8";
-/* Loading spinner for calendar transitions */
+/* Loading spinner for calendar transitions (pseudo-element approach) */
 @keyframes waveSpinnerRotate {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
-#WAVE-form .wave-loading-spinner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#WAVE-form #WAVE-appointment-scheduler {
+    position: relative;
+}
+
+#WAVE-form #WAVE-appointment-scheduler.wave-loading::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    background: rgba(255, 255, 255, 0.75);
     z-index: 10;
-    background: rgba(255, 255, 255, 0.7);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.15s ease;
+    border-radius: 8px;
 }
 
-#WAVE-form .wave-loading-spinner.active {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-#WAVE-form .wave-loading-spinner::after {
+#WAVE-form #WAVE-appointment-scheduler.wave-loading::after {
     content: '';
-    width: 32px;
-    height: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 28px;
+    height: 28px;
     border: 3px solid #e0e0e0;
     border-top-color: #0071B6;
     border-radius: 50%;
-    animation: waveSpinnerRotate 0.7s linear infinite;
+    animation: waveSpinnerRotate 0.65s linear infinite;
+    z-index: 11;
 }
 
 /*!

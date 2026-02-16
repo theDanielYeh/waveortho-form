@@ -305,6 +305,8 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 15px;
+    min-height: 280px;
+    position: relative;
 }
 
 #WAVE-form .calendar-table {
@@ -618,7 +620,45 @@
         padding: 5px 3px 5px 3px;
     } */
 }
-@charset "UTF-8";/*!
+@charset "UTF-8";
+/* Loading spinner for calendar transitions */
+@keyframes waveSpinnerRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#WAVE-form .wave-loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+}
+
+#WAVE-form .wave-loading-spinner.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#WAVE-form .wave-loading-spinner::after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    border: 3px solid #e0e0e0;
+    border-top-color: #0071B6;
+    border-radius: 50%;
+    animation: waveSpinnerRotate 0.7s linear infinite;
+}
+
+/*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.

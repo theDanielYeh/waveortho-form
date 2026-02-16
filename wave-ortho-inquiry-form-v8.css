@@ -296,7 +296,7 @@
 #WAVE-form #WAVE-appointment-scheduler {
     margin: 0 auto;
     max-width: 1000px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
     padding-top: 0px;
 }
 
@@ -304,7 +304,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     min-height: 280px;
     position: relative;
 }
@@ -608,8 +608,8 @@
     margin: 0 auto;
     display: block;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 6px;
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;

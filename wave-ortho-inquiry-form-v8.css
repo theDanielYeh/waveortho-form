@@ -448,6 +448,12 @@
     text-align: center;
 }
 
+@media (max-width: 575px) {
+    #WAVE-form .available-appointments-container {
+        margin-top: 16px;
+    }
+}
+
 #WAVE-form .available-appointments-table .selected-appointment-container {
     display: flex;
     justify-content: space-between;
